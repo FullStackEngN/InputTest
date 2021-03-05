@@ -15,9 +15,9 @@ print("Start time: " + date_time)
 pyautogui.alert('Please minimize all applications, open Word(or Excel/PowerPoint) in maximize window. Once you click the "OK" button, Then the application will try to type contents in Word(or Excel/PowerPoint)')
 
 #pyautogui.click()
-# pyautogui.doubleClick()
+#pyautogui.doubleClick()
 
-# pyautogui.typewrite('Hello world!', interval=0.25)  # type with quarter-second pause in between each key
+#pyautogui.typewrite('Hello world!', interval=0.25)  # type with quarter-second pause in between each key
 
 pyautogui.moveTo(screenWidth/2, screenHeight/2)
 pyautogui.click()
