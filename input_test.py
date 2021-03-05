@@ -1,10 +1,16 @@
+from datetime import datetime
 import pyautogui
+import time
+
 # 获取屏幕尺寸
 screenWidth, screenHeight = pyautogui.size()
 # 获取当前坐标位置
 currentMouseX, currentMouseY = pyautogui.position()
 
-print "Start : %s" % time.ctime()
+current_time= datetime.now()
+format_str = "%Y-%m-%d %H:%M:%S"
+date_time = current_time.strftime(format_str)
+print("Start time: " + date_time)
 
 time.sleep(10)
 
@@ -18,7 +24,6 @@ time.sleep(10)
 
 x = 0
 while x < 1000:
-nihao2nihao2n2nihahao2nihao2ni
     pyautogui.moveTo(currentMouseX/2, currentMouseY/2)
 
     # type with quarter-second pause in between each key
@@ -26,4 +31,6 @@ nihao2nihao2n2nihahao2nihao2ni
 
     x += 1
 
-print "End : %s" % time.ctime()
+current_time= datetime.now()
+date_time = current_time.strftime(format_str)
+print("End time: " + date_time)
