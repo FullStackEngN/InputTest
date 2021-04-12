@@ -14,7 +14,7 @@ format_str = "%Y-%m-%d %H:%M:%S"
 date_time = current_time.strftime(format_str)
 print("Start time: " + date_time)
 
-pyautogui.alert('Please minimize all applications, open Word(or Excel/PowerPoint) in maximize window. Once you click the "OK" button, Then the application will try to type contents in Word(or Excel/PowerPoint)')
+pyautogui.alert('Please minimize all applications, ONLY open PowerPoint in maximize window. Once you click the "OK" button, Then the application will try to type contents in PowerPoint')
 
 # pyautogui.click()
 # pyautogui.doubleClick()
